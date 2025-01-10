@@ -117,7 +117,6 @@ const Footer = () => {
   );
 };
 
-// Add this line to fix the issue
 export default Footer;
 
 
