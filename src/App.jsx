@@ -1,7 +1,4 @@
 
-
-
-
 import { ReactLenis,  } from 'lenis/react'
 
 import { gsap } from "gsap";
