@@ -14,10 +14,10 @@ const sitemap = [
     label: 'Work',
     href: '#work'
   },
-  {
-    label: 'Reviews',
-    href: '#reviews'
-  },
+  // {
+  //   label: 'Reviews',
+  //   href: '#reviews'
+  // },
   {
     label: 'Contact me',
     href: '#contact'
@@ -27,23 +27,19 @@ const sitemap = [
 const socials = [
   {
     label: 'GitHub',
-    href: ' '
+    href: ' https://github.com/bikash1926'
   },
   {
     label: 'LinkedIn',
-    href: ' '
+    href: 'https://www.linkedin.com/in/bikash-muduli-a86a33273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app '
   },
-  {
-    label: 'Twitter X',
-    href: ' '
-  },
+  // {
+  //   label: 'Twitter X',
+  //   href: ' '
+  // },
   {
     label: 'Instagram',
-    href: ' '
-  },
-  {
-    label: 'CodePen',
-    href: ' '
+    href: ' https://www.instagram.com/bikash_muduli23/profilecard/?igsh=MWxkdXR5Z2lydHlmZw=='
   }
 ];
 
@@ -100,15 +96,15 @@ const Footer = () => {
               href=""
               className=''
             >
-              <img src="/images/logo.svg"
+              {/* <img src="/images/logo.svg"
                 alt="logo"
                 width={40}
                 height={40}
-              />
+              /> */}
             </a>
 
             <p className="text-zinc-500 text-sm"
-            >&copy;2024 <span className="text-zinc-200">biaksh</span></p>
+            >&copy;2025 <span className="text-zinc-200">Biaksh Muduli</span></p>
           </div>
 
         </div>

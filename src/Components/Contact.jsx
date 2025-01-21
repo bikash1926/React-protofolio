@@ -111,7 +111,7 @@ const Contact = () => {
               <label htmlFor="name"
                 className=""
               >
-                name
+                Name
               </label>
 
               <input type="text"
