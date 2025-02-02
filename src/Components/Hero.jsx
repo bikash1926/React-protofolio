@@ -4,9 +4,9 @@ import { ButtonPrimary, ButtonOutline } from './Button';
 
 
 const Hero = () => {
-    return (
-        <section id="home" className="p-10 sm:p-16 lg:pt-36">
-        <div className="container mx-auto lg:grid lg:grid-cols-2 items-center lg:gap-10">
+  return (
+      <section id="home" className="relative p-10 sm:p-16 lg:pt-36">
+        <div className="container relative mx-auto lg:grid lg:grid-cols-2 items-center lg:gap-10">
           {/* Left Section */}
           <div>
             {/* Availability Status */}
@@ -35,8 +35,8 @@ const Hero = () => {
           </div>
       
           {/* Right Section */}
-          <div className="">
-            <figure className="w-full max-w-[480px] mx-auto bg-gradient-to-t from-sky-300 via-sky-400/40 to-transparent rounded-[60px] overflow-hidden  sm:m-10">
+          <div className="max-md:m-4  max-md:mt-50 ">
+            <figure className="w-full max-w-[480px] mx-auto bg-gradient-to-t from-sky-300 via-sky-400/40 to-transparent rounded-[60px] overflow-hidden sm:m-10">
               <img
                 src="/images/profilepic -Photoroom.png"
                 alt="Profile Picture"
@@ -46,9 +46,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      
-
-    )
+  );
 }
 
-export default Hero
+export default Hero;

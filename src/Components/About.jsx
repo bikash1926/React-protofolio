@@ -15,7 +15,7 @@ const About = () => {
     <section id='about'  className="section">
 
     <div className="container">
-        <div className="bg-orange-800 p-7 rounded-2xl md:p-12 reveal-up">
+        <div className="bg-zinc-800 p-7 rounded-2xl md:p-12 reveal-up">
             <p className="text-zinc-300 mb4
              md:mb-8 md:text-xl md:max-w-[60ch]">
           Welcome! I'm Bikash, a skilled web developer passionate about designin

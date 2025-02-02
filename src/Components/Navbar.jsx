@@ -12,6 +12,7 @@ function Navbar({ navOpen }) {
       activeBox.current.style.left = lastActiveLink.current.offsetLeft + "px";
       activeBox.current.style.width = lastActiveLink.current.offsetWidth + "px";
       activeBox.current.style.height = lastActiveLink.current.offsetHeight + "px";
+      
     }
   };
 
@@ -38,7 +39,6 @@ function Navbar({ navOpen }) {
       <a href="#about" className="nav-link" onClick={activeCurrentLink}>About</a>
       <a href="#work" className="nav-link" onClick={activeCurrentLink}>Work</a>
       <a href="#contact" className="nav-link" onClick={activeCurrentLink}>Contact</a>
-      
       <div className="active-box" ref={activeBox}></div>
     </nav>
   );

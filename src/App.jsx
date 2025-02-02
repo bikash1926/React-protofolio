@@ -16,6 +16,7 @@ import About from './Components/About'
 import Skill from './Components/Skill'
 import Work from './Components/Work'
 import Review from './Components/Review'
+import Edu from './Components/Edu'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
 import { element } from 'prop-types';
@@ -54,6 +55,7 @@ useGSAP (()=>{
       <Skill/>
       <Work/>
       {/* <Review/> */}
+      <Edu/>
       <Contact/>
       </main>
       <Footer/>
