@@ -48,18 +48,18 @@ const Footer = () => {
     <footer className="section">
       <div className="container">
         <div className="lg:grid lg:grid-cols-2">
-          <div className="mb-10">
+          {/* <div className="mb-10">
             <h2 className="headline-1 mb-8 lg:max-w-[12ch]">Let&apos;s work together today!</h2>
             <ButtonPrimary
               href="mailto:bikashmuduli543@gmail.com"
               label="Start Project"
               icon="chevron_right"
             />
-          </div>
+          </div> */}
 
           <div className="grid grid-cols-2">
             <div>
-              <p className="mb-2">Sitemap</p>
+              <p className="mb-2 text-zinc-500 font-semibold">Sitemap</p>
               <ul className="">
                 {sitemap.map(({ label, href }) => (
                   <li key={label} className="">
@@ -74,7 +74,7 @@ const Footer = () => {
 
           
             <div>
-              <p className="mb-2">Social</p>
+              <p className="mb-2 text-zinc-500 font-semibold">Social</p>
               <ul className="">
                 {socials.map(({ label, href }) => (
                   <li key={label} className="">

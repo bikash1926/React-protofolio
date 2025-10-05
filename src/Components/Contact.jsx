@@ -81,8 +81,8 @@ const Contact = () => {
       <div className="container  lg:grid lg:grid-cols-2 lg:items-stretch ">
 
         <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
-          <h2 className="headline-2 lg:maax-w-[12ch]">Contact me for collaboration</h2>
-          <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch]">
+          <h2 className="headline-2 lg:maax-w-[12ch] text-zinc-500">Contact me for collaboration</h2>
+          <p className="text-gray-100 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] ">
             Reach out today to discuss your project needs and start
             collaborating on something amazing!
           </p>
@@ -107,9 +107,9 @@ const Contact = () => {
           method="POST"
         >
           <div className="md:grid md:items-center md:grid-cols-1 md:gap-2">
-            <div className="mb-4">
+            <div className="mb-4 ">
               <label htmlFor="name"
-                className=""
+                className="text-zinc-500"
               >
                 Name
               </label>
@@ -125,8 +125,8 @@ const Contact = () => {
             </div>
 
             <div className="mb-4">
-              <label htmlFor="emali"
-                className=""
+              <label htmlFor="email"
+                className="text-zinc-500"
               >
                 Email
               </label>
@@ -144,7 +144,7 @@ const Contact = () => {
             <div className="mb-4">
               <label
                 htmlFor="message"
-                className="label"
+                className="label text-zinc-500"
               >
                 Message
               </label>
@@ -153,7 +153,7 @@ const Contact = () => {
                 id="message"
                 placeholder="hi"
                 required
-                className="text-field resize-y min-h-32 max-h-80 "
+                className="text-field resize-y min-h-32 max-h-80 text-zinc-500"
               >
 
               </textarea>

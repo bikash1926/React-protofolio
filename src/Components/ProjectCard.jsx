@@ -5,7 +5,7 @@ const ProjectCard = ({ imgSrc, title, tags, projectLink, classes }) => {
   return (
     <div
       className={
-        "relative p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition-colors" +
+        "relative p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition-colors " +
         classes
       }
     >
@@ -15,7 +15,7 @@ const ProjectCard = ({ imgSrc, title, tags, projectLink, classes }) => {
 
       <div className="flex items-center justify-between gap-4">
         <div className="">
-          <h3 className="title-1 mb-3">{title}</h3>
+          <h3 className="title-1 mb-3 text-zinc-100">{title}</h3>
 
           <div className="flex flex-wrap items-center gap-2">
             {tags.map((label, key) => (
