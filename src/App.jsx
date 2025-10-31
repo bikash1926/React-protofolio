@@ -1,15 +1,10 @@
 
-import { ReactLenis,  } from 'lenis/react'
+import { ReactLenis } from 'lenis/react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import React, { useEffect } from 'react'
 
-import { gsap } from "gsap";
-    
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from '@gsap/react';
-
-gsap.registerPlugin(useGSAP , ScrollTrigger);
-
-
-import React from 'react'
+gsap.registerPlugin(ScrollTrigger)
 import Header from './Components/Header'
 import Hero from './Components/Hero'
 import About from './Components/About'
@@ -23,28 +18,26 @@ import { element } from 'prop-types';
 
 
 function App() {
-
-useGSAP (()=>{
-  const element = gsap.utils .toArray('.reveal-up');
-  
-  element.forEach((element)=>{
-    gsap.to(element,{
-     scrollTrigger:
-     {
-      trigger:element,
-      start:'-200 bottom',
-      end:'bottom 80%',
-      scrub:true,
-     
-     },
-     y:0,
-     opacity:1,
-     direction:1,
-     ease:'power2.out'
+  useEffect(() => {
+    const elements = gsap.utils.toArray('.reveal-up')
+    elements.forEach((el) => {
+      gsap.to(el, {
+        scrollTrigger: {
+          trigger: el,
+          start: '-200 bottom',
+          end: 'bottom 80%',
+          scrub: true,
+        },
+        y: 0,
+        opacity: 1,
+        ease: 'power2.out',
+      })
     })
-  })
-})
-
+    // cleanup
+    return () => {
+      ScrollTrigger.getAll().forEach((t) => t.kill())
+    }
+  }, [])
 
   return (
     <ReactLenis root>
