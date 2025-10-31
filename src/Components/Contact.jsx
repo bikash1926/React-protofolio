@@ -3,6 +3,7 @@ import React from "react";
 const socialLinks = [
   {
     href: " ",
+    bgClass: "bg-zinc-900",
     icon: (
       <svg
         width="24"
@@ -21,6 +22,7 @@ const socialLinks = [
   },
   {
     href: " ",
+    bgClass: "bg-[#0A66C2]",
     icon: (
       <svg
         width="24"
@@ -39,6 +41,7 @@ const socialLinks = [
   },
   {
     href: " ",
+    bgClass: "bg-[#1DA1F2]",
     icon: (
       <svg
         width="24"
@@ -57,6 +60,7 @@ const socialLinks = [
   },
   {
     href: " ",
+    bgClass: "bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600",
     icon: (
       <svg
         width="25"
@@ -86,14 +90,15 @@ const Contact = () => {
             Reach out today to discuss your project needs and start
             collaborating on something amazing!
           </p>
-          <div className="flex items-center gap-2 mt-auto">
-            {socialLinks.map(({ href, icon }, key) => (
+          <div className="flex items-center gap-3 mt-auto">
+            {socialLinks.map(({ href, icon, bgClass, alt }, key) => (
               <a
                 key={key}
-                href={href} // Corrected from "herf" to "href"
+                href={href}
                 target="_blank"
-                rel="noopener noreferrer" // Add this for security when using target="_blank"
-                className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-[background-color,color] hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80"
+                rel="noopener noreferrer"
+                aria-label={alt}
+                className={`${bgClass} w-12 h-12 grid place-items-center rounded-lg text-white ring-inset ring-2 ring-zinc-50/5 transition-colors hover:opacity-90`}
               >
                 {icon}
               </a>
