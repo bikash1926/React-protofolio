@@ -1,76 +1,69 @@
-import React from 'react'
-import ProjectCard from './ProjectCard';
+// src/components/Work.jsx
+import React from "react";
+import ChromaGrid from "./ChromaGrid";
 
+const items = [
+  {
+    image: "/images/project-1.jpg",
+    title: "Full Stack Music App",
+    subtitle: "API, MVC, Development",
 
+    url: "https://github.com/",
+  },
+  {
+    image: "/images/project-2.jpg",
+    title: "Free Stock Photo App",
+    subtitle: "API, SPA",
 
-const works = [
-    {
-      imgSrc: '/images/project-1.jpg',
-      title: 'Full stack music app',
-      tags: ['API', 'MVC', 'Development'],
-      projectLink: ' '
-    },
-    {
-      imgSrc: '/images/project-2.jpg',
-      title: 'Free stock photo app',
-      tags: ['API', 'SPA'],
-      projectLink: ' '
-    },
-    {
-      imgSrc: '/images/project-3.jpg',
-      title: 'Recipe app',
-      tags: ['Development', 'API'],
-      projectLink: ''
-    },
-    {
-      imgSrc: '/images/project-4.jpg',
-      title: 'Real state website',
-      tags: ['Web-design', 'Development'],
-      projectLink: ' '
-    },
-    {
-      imgSrc: '/images/project-5.jpg',
-      title: 'eCommerce website',
-      tags: ['eCommerce', 'Development'],
-      projectLink: '  '
-    },
-    {
-      imgSrc: '/images/project-6.jpg',
-      title: 'vCard Personal portfolio',
-      tags: ['Web-design', 'Development'],
-      projectLink: ' '
-    },
-  ];
+    url: "https://github.com/",
+  },
+  {
+    image: "/images/project-3.jpg",
+    title: "Recipe App",
+    subtitle: "Development, API",
 
+    url: "https://github.com/",
+  },
+  {
+    image: "/images/project-4.jpg",
+    title: "Real Estate Website",
+    subtitle: "Web Design, Development",
 
+    url: "https://github.com/",
+  },
+  {
+    image: "/images/project-5.jpg",
+    title: "eCommerce Website",
+    subtitle: "eCommerce, Development",
+
+    url: "https://github.com/",
+  },
+  {
+    image: "/images/project-6.jpg",
+    title: "vCard Personal Portfolio",
+    subtitle: "Web Design, Development",
+
+    url: "https://github.com/",
+  },
+];
 
 const Work = () => {
   return (
-   <section 
-   className="section"
-   id='work'
-   >
-    <div className="container">
-
-        <h2 className="headline-2 mb-8 reveal-up text-zinc-500">
-       Projects
-        </h2>
-    
-        <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
-            {works.map(({imgSrc,title,tags,projectLink}, key) =>(
-                <ProjectCard
-                key={key}
-                imgSrc={imgSrc}
-                title={title}
-                tags={tags}
-                projectLink={projectLink}
-                className='reveal-up'
-                />
-            ))}
+    <section id="work" className="py-20  text-white">
+      <div className="container mx-auto px-4 ">
+        <h2 className="text-4xl font-bold text-center mb-12">My Recent Work</h2>
+        <div style={{ height: "auto", position: "relative" }}>
+          <ChromaGrid
+            items={items}
+            radius={400}
+            damping={0.5}
+            fadeOut={0.6}
+            ease="power3.out"
+          />
         </div>
-    </div>
-   </section>
-  )
-}
+      </div>
+    </section>
+  );
+};
 
-export default Work
+export default Work;

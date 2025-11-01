@@ -1,6 +1,6 @@
 
 import React, { useState } from "react"; // Import useState
-import Navbar from "./Navbar"; // Assuming Navbar is a separate component
+import Navbar from "./Navbar"; // Restore original Navbar
 
 function Header() {
   const [navOpen, setNavOpen] = useState(false);
@@ -14,7 +14,7 @@ function Header() {
   >
 
     
-    <div className="relative flex justify-center md:justify-between md:items-center">
+      <div className="relative flex justify-center md:justify-between md:items-center">
       {/* Mobile Menu Button */}
       <button
         className="menu-btn block md:hidden"
@@ -26,7 +26,6 @@ function Header() {
         </span>
       </button>
 
-     
       <Navbar navOpen={navOpen} />
     </div>
 
