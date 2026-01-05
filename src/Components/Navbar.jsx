@@ -37,7 +37,7 @@ function Navbar({ navOpen }) {
       <a ref={lastActiveLink} href="#home" className="nav-link active" onClick={activeCurrentLink}>Home</a>
       <a href="#about" className="nav-link" onClick={activeCurrentLink}>About</a>
       <a href="#work" className="nav-link" onClick={activeCurrentLink}>Work</a>
-      <a href="#contact" className="nav-link" onClick={activeCurrentLink}>Contact</a>
+     
       
       <div className="active-box" ref={activeBox}></div>
     </nav>
